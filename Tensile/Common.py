@@ -225,7 +225,7 @@ globalParameters["NumMergedFiles"] = 1            # The number of files that ker
 
 globalParameters["MaxFileName"] = 64              # If a file name would be longer than this, shorten it with a hash.
 globalParameters["SupportedISA"] = [(8,0,3),
-                                    (9,0,0), (9,0,2), (9,0,3), (9,0,c), (9,0,6), (9,0,8),
+                                    (9,0,0), (9,0,2), (9,0,3), (9,0,6), (9,0,8), (9,0,10),
                                     (9,4,0), (9,4,1), (9,4,2),
                                     (10,1,0), (10,1,1), (10,1,2), (10,3,0), (10,3,1), (10,3,2), (10,3,3), (10,3,4), (10,3,5), (10,3,6),
                                     (11,0,0), (11,0,1), (11,0,2), (11,0,3)] # assembly kernels writer supports these architectures
@@ -311,9 +311,10 @@ defaultGlobalParameters = deepcopy(globalParameters)
 # Translate GPU targets to filter filenames in Tensile_LOGIC directory
 architectureMap = {
   'all':'_','gfx000':'none', 'gfx803':'r9nano', 'gfx900':'vega10', 'gfx900:xnack-':'vega10', 'gfx902':'vega8', 'gfx903':'vega8',
-  'gfx90c':'vega7', 'gfx90c:xnack-':'vega7', 'gfx906':'vega20', 'gfx906:xnack+':'vega20', 'gfx906:xnack-':'vega20',
+  'gfx90c':'vega10', 'gfx90c:xnack-':'vega10', 'gfx906':'vega20', 'gfx906:xnack+':'vega20', 'gfx906:xnack-':'vega20',
   'gfx908':'arcturus','gfx908:xnack+':'arcturus', 'gfx908:xnack-':'arcturus',
   'gfx90a':'aldebaran', 'gfx90a:xnack+':'aldebaran', 'gfx90a:xnack-':'aldebaran',
+  'gfx9010':'aldebaran', 'gfx9010:xnack+':'aldebaran', 'gfx9010:xnack-':'aldebaran',
   'gfx940':'aquavanjaram', 'gfx940:xnack+':'aquavanjaram', 'gfx940:xnack-':'aquavanjaram',
   'gfx941':'aquavanjaram941', 'gfx941:xnack+':'aquavanjaram941', 'gfx941:xnack-':'aquavanjaram941',
   'gfx942':'aquavanjaram942', 'gfx942:xnack+':'aquavanjaram942', 'gfx942:xnack-':'aquavanjaram942',
