@@ -229,7 +229,9 @@ globalParameters["SupportedISA"] = [(8,0,3),
                                     (9,4,0), (9,4,1), (9,4,2),
                                     (10,1,0), (10,1,1), (10,1,2), (10,3,0), (10,3,1), (10,3,2), (10,3,3), (10,3,4), (10,3,5), (10,3,6),
                                     (11,0,0), (11,0,1), (11,0,2), (11,0,3)] # assembly kernels writer supports these architectures
+
 #gfx803;gfx900;gfx902;gfx90c;gfx90c:xnack-;gfx906;gfx906:xnack-;gfx908:xnack-;gfx90a:xnack+;gfx90a:xnack-;gfx9010,gfx940;gfx941;gfx942;gfx1010;gfx1010:xnack-;gfx1011;gfx1012;gfx1012:xnack-;gfx1030;gfx1031;gfx1032;gfx1033;gfx1034;gfx1035;gfx1036;gfx1100;gfx1101;gfx1102;gfx1103
+
 globalParameters["CleanupBuildFiles"] = False                     # cleanup build files (e.g. kernel assembly) once no longer needed
 globalParameters["GenerateManifestAndExit"] = False               # Output manifest file with list of expected library objects and exit
 globalParameters["ClientBuildPath"] = "0_Build"                   # subdirectory for host code build directory
@@ -318,7 +320,7 @@ architectureMap = {
   'gfx1010':'navi10', 'gfx1010:xnack-':'navi10', 'gfx1011':'navi12', 'gfx1011:xnack-':'navi12', 
   'gfx1011:xnack+':'navi12', 'gfx1012':'navi14', 'gfx1012:xnack-':'navi14', 'gfx1012:xnack+':'navi14', 
   'gfx1013':'navi12lite', 'gfx1013:xnack-':'navi12lite', 'gfx1013:xnack+':'navi12lite',
-  'gfx1030':'navi21', 'gfx1031':'navi22', 'gfx1032':'navi23', 'gfx1033':'vangogh' 'gfx1034':'navi24', 'gfx1035':'rembrandt', 'gfx1036':'raphael',
+  'gfx1030':'navi21', 'gfx1031':'navi22', 'gfx1032':'navi23', 'gfx1033':'vangogh', 'gfx1034':'navi24', 'gfx1035':'rembrandt', 'gfx1036':'raphael',
   'gfx1100':'navi31', 'gfx1101':'navi32', 'gfx1102':'navi33', 'gfx1103':'navi34'
 }
 #gfx803;gfx900;gfx902;gfx903;gfx90c;gfx90c:xnack-;gfx906;gfx906:xnack-;gfx906:xnack+;gfx908:xnack-;gfx90a:xnack+;gfx90a:xnack-;gfx90a:xnack+;gfx940;gfx940:xnack-;gfx940:xnack+;gfx941;gfx941:xnack-;gfx941:xnack+;gfx942;gfx942:xnack-;gfx942:xnack+;gfx1010;gfx1010:xnack-;gfx1011;gfx1011:xnack+;gfx1011:xnack-;gfx1012;gfx1012:xnack-;gfx1012:xnack+;gfx1013;gfx1013:xnack-;gfx1013:xnack+;gfx1030;gfx1031;gfx1032;gfx1033;gfx1034;gfx1035;gfx1036;gfx1100;gfx1101;gfx1102;gfx1103
